@@ -1,3 +1,12 @@
 spring:
-  application:
-    name: fx-deals
+  datasource:
+    url: jdbc:mysql://mysql:3309/fxdb
+    username: fxuser
+    password: fxpass
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
