@@ -8,6 +8,7 @@ import com.progressSoft.fx_deals.exception.DuplicateDealException;
 import com.progressSoft.fx_deals.exception.InvalidDealDataException;
 import com.progressSoft.fx_deals.mapper.DealMapper;
 import com.progressSoft.fx_deals.repository.DealRepository;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class DealServiceImpl implements IDealService {
 
     private final DealRepository dealRepository;
